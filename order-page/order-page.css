@@ -6,8 +6,6 @@
 html,
 body {
   font-family: 'Oswald', sans-serif;
-  height: 100%;
-  width: 100%;
   background: #817070;
 }
 
@@ -346,6 +344,7 @@ input::placeholder {
   font-size: 25px;
   line-height: 30px;
   color: #ffffff;
+  padding-top: 30px;
 }
 
 .set__order p {
@@ -364,11 +363,15 @@ input::placeholder {
   border: 3px solid #ffffff;
   width: 220px;
   height: 55px;
-  margin-bottom: 35px;
 }
 
 .btn:hover {
   color: #fff;
   background: #817070;
   cursor: pointer;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
 }
