@@ -6,9 +6,13 @@
 html,
 body {
   font-family: 'Oswald', sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #817070;
 }
 
 header {
+  background: #ffff;
   height: 110px;
   text-transform: uppercase;
   font-style: normal;
@@ -49,7 +53,7 @@ main {
   background-size: 390px;
   background-position: top 40px left 40px, bottom 0 right 40px,
     bottom 0 left 40px, top 40px right 40px;
-  height: 645px;
+  height: 100%;
 }
 
 .input__client__name {
@@ -331,10 +335,6 @@ input::placeholder {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-}
-
-footer {
-  background: #817070;
 }
 
 .set__order {
