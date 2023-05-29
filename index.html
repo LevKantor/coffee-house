@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="menu">
+          <a href="index.html" class="menu__logo">Coffee house</a>
+          <ul class="menu__ul">
+            <li class="menu__li">
+              <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__li">
+              <a href="#chapter__story" class="menu__link">Story</a>
+            </li>
+            <li class="menu__li">
+              <a href="#chapter__blog" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__li">
+              <a href="#subscribe" class="menu__link">Subscribe</a>
+            </li>
+            <li class="menu__li">
+              <a
+                href="./order-page/order-page.html"
+                class="menu__link menu__link_order"
+                >Make order</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="chapter__image">
+          <p>Take your time</p>
+          <hr />
+        </div>
+        <div class="chapter__story" id="chapter__story">
+          <div class="story__title">
+            <p>Story</p>
+          </div>
+          <div class="story__content">
+            <div class="story__image">
+              <img src="./img/story.jpg" alt="image" />
+            </div>
+            <div class="story__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                varius eget arcu quis cursus. Nunc id tortor imperdiet,
+                vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend
+                euismod. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Praesent mattis ultrices
+                est, congue ullamcorper erat bibendum pulvinar. In accumsan
+                dapibus accumsan. Maecenas semper est ut nunc feugiat, vel
+                ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra
+                risus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="chapter__blog" id="chapter__blog">
+          <div class="blog__title">
+            <p>Blog</p>
+          </div>
+          <div class="blog__content">
+            <div class="card">
+              <a href="#" class="card__link">
+                <div class="card__title">
+                  <p class="card__title">Daily Coffee News</p>
+                </div>
+                <div class="card__image">
+                  <img src="./img/daily-news.jpg" alt="image" />
+                </div>
+                <div class="card__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean varius eget arcu quis cursus. Nunc id tortor
+                    imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac
+                    elit eleifend euismod.
+                  </p>
+                </div></a
+              >
+            </div>
+
+            <div class="card">
+              <a href="#" class="card__link">
+                <div class="card__title">
+                  <p class="card__title">Dutch Coffee Chains</p>
+                </div>
+                <div class="card__image">
+                  <img src="./img/dutch-chains.jpg" alt="image" />
+                </div>
+                <div class="card__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean varius eget arcu quis cursus. Nunc id tortor
+                    imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac
+                    elit eleifend euismod.
+                  </p>
+                </div></a
+              >
+            </div>
+
+            <div class="card">
+              <a href="#" class="card__link">
+                <div class="card__title">
+                  <p class="card__title">Start Up In Minneapolis</p>
+                </div>
+                <div class="card__image">
+                  <img src="./img/start-up.jpg" alt="image" />
+                </div>
+                <div class="card__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean varius eget arcu quis cursus. Nunc id tortor
+                    imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac
+                    elit eleifend euismod.
+                  </p>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__top" id="subscribe">
+          <form action="" class="form">
+            <label class="subscribe" for="email">Subscribe</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="enter your email"
+              class="email"
+            />
+            <button class="button">Submit</button>
+          </form>
+        </div>
+        <div class="footer__bottom">© Copyright 2022</div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  c
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="order-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <a href="../index.html" class="menu__logo">Coffee house</a>
+        </div>
+        <div class="header__title"><h2>Оформление заказа</h2></div>
+      </header>
+      <main class="main">
+        <div class="input__client__name">
+          <input
+            type="text"
+            name="client__name"
+            placeholder="Введите Имя"
+            class="client__name"
+          />
+          <input
+            type="text"
+            name="client__surname"
+            placeholder="Введите Фамилию"
+            class="client__surname"
+          />
+        </div>
+        <div class="products">
+          <div class="div__column1">
+            <div class="div__label__clm1">
+              <div class="div__block">
+                <div class="div__label__espresso">
+                  <input
+                    type="checkbox"
+                    id="checkbox1"
+                    name="products"
+                    class="checkbox"
+                    value="0"
+                    data-products="espresso"
+                  />
+                  <label class="label" for="checkbox1">Эспрессо:</label>
+                </div>
+                <div class="div__choice__block">
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="sm__espresso"
+                      name="espresso"
+                      class="radio radio1"
+                      value="90"
+                    />
+                    <label class="label__size" for="sm__espresso"
+                      >200мл - 90р.</label
+                    >
+                  </div>
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="mid__espresso"
+                      name="espresso"
+                      class="radio radio1"
+                      value="110"
+                    />
+                    <label class="label__size" for="mid__espresso"
+                      >350мл - 110р.</label
+                    >
+                  </div>
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="big__espresso"
+                      name="espresso"
+                      class="radio radio1"
+                      value="130"
+                    />
+                    <label class="label__size" for="big__espresso"
+                      >450мл - 130р.</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="div__block">
+                <div class="div__label__latte">
+                  <input
+                    type="checkbox"
+                    id="checkbox2"
+                    name="products"
+                    class="checkbox"
+                    value="0"
+                    data-products="latte"
+                  />
+                  <label class="label" for="checkbox2">Латте:</label>
+                </div>
+                <div class="div__choice__block">
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="sm__latte"
+                      name="latte"
+                      class="radio radio2"
+                      value="100"
+                    />
+                    <label class="label__size" for="sm__latte"
+                      >200мл - 100р.</label
+                    >
+                  </div>
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="mid__latte"
+                      name="latte"
+                      class="radio radio2"
+                      value="120"
+                    />
+                    <label class="label__size" for="mid__latte"
+                      >350мл - 120р.</label
+                    >
+                  </div>
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="big__latte"
+                      name="latte"
+                      class="radio radio2"
+                      value="140"
+                    />
+                    <label class="label__size" for="big__latte"
+                      >450мл - 140р.</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="div__block">
+                <div class="div__label__cappuccino">
+                  <input
+                    type="checkbox"
+                    id="checkbox3"
+                    name="products"
+                    class="checkbox"
+                    value="0"
+                    data-products="cappuccino"
+                  />
+                  <label class="label" for="checkbox3">Капучино:</label>
+                </div>
+                <div class="div__choice__block">
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="sm__cappuccino"
+                      name="cappuccino"
+                      class="radio radio3"
+                      value="110"
+                    />
+                    <label class="label__size" for="sm__cappuccino"
+                      >200мл - 110р.</label
+                    >
+                  </div>
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="mid__cappuccino"
+                      name="cappuccino"
+                      class="radio radio3"
+                      value="130"
+                    />
+                    <label class="label__size" for="mid__cappuccino"
+                      >350мл - 130р.</label
+                    >
+                  </div>
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="big__cappuccino"
+                      name="cappuccino"
+                      class="radio radio3"
+                      value="150"
+                    />
+                    <label class="label__size" for="big__cappuccino"
+                      >450мл - 150р.</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="div__block">
+                <div class="div__label__americano">
+                  <input
+                    type="checkbox"
+                    id="checkbox4"
+                    name="products"
+                    class="checkbox"
+                    value="0"
+                    data-products="americano"
+                  />
+                  <label class="label" for="checkbox4">Американо:</label>
+                </div>
+                <div class="div__choice__block">
+                  <div class="div__choice__size">
+                    <input
+                      type="radio"
+                      id="sm__americano"
+                      name="americano"
+                      class="radio radio4"
+                      value="90"
+                    />
+                    <label class="label__size" for="sm__americano"
+                      >200мл - 90р.</label
+                    >
+                  </div>
+                  <div class="div__choice__block">
+                    <input
+                      type="radio"
+                      id="mid__americano"
+                      name="americano"
+                      class="radio radio4"
+                      value="110"
+                    />
+                    <label class="label__size" for="mid__americano"
+                      >350мл - 110р.</label
+                    >
+                  </div>
+                  <div class="div__choice__block">
+                    <input
+                      type="radio"
+                      id="big__americano"
+                      name="americano"
+                      class="radio radio4"
+                      value="130"
+                    />
+                    <label class="label__size" for="big__americano"
+                      >450мл - 130р.</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div__amount__clm1">
+              <input
+                type="number"
+                min="0"
+                max="10"
+                id="amount__checkbox1"
+                name="amount__espresso"
+                class="amount__clm1 amount"
+                value="0"
+              />
+              <input
+                type="number"
+                min="0"
+                max="10"
+                id="amount__checkbox2"
+                name="amount__latte"
+                class="amount__clm1 amount"
+                value="0"
+              />
+              <input
+                type="number"
+                min="0"
+                max="10"
+                id="amount__checkbox3"
+                name="amount__cappuccino"
+                class="amount__clm1 amount"
+                value="0"
+              />
+              <input
+                type="number"
+                min="0"
+                max="10"
+                id="amount__checkbox4"
+                name="amount__americano"
+                class="amount__clm1 amount"
+                value="0"
+              />
+            </div>
+          </div>
+
+          <div class="div__column2">
+            <div class="div__label__clm2">
+              <div class="div__choice__clm2">
+                <input
+                  type="checkbox"
+                  id="checkbox5"
+                  name="products"
+                  class="checkbox"
+                  value="80"
+                  data-products="choco__cupcake"
+                />
+                <label class="label" for="checkbox5"
+                  >Шоколадный кекс - 80р.</label
+                >
+              </div>
+
+              <div class="div__choice__clm2">
+                <input
+                  type="checkbox"
+                  id="checkbox6"
+                  name="products"
+                  class="checkbox"
+                  value="90"
+                  data-products="blueberry__cupcake"
+                />
+                <label class="label" for="checkbox6"
+                  >Черничный кекс - 90р.</label
+                >
+              </div>
+
+              <div class="div__choice__clm2">
+                <input
+                  type="checkbox"
+                  id="checkbox7"
+                  name="products"
+                  class="checkbox"
+                  value="100"
+                  data-products="apple__tart"
+                />
+                <label class="label" for="checkbox7"
+                  >Яблочный тарт - 100р.</label
+                >
+              </div>
+
+              <div class="div__choice__clm2">
+                <input
+                  type="checkbox"
+                  id="checkbox8"
+                  name="products"
+                  class="checkbox"
+                  value="100"
+                  data-products="cheesecake"
+                />
+                <label class="label" for="checkbox8">Чизкейк - 100р.</label>
+              </div>
+            </div>
+          </div>
+          <div class="div__amount__clm2">
+            <input
+              type="number"
+              min="0"
+              max="10"
+              id="amount__checkbox5"
+              name="amount__choco__cupcake"
+              class="amount__clm2 amount"
+              value="0"
+            />
+            <input
+              type="number"
+              min="0"
+              max="10"
+              id="amount__checkbox6"
+              name="amount__blueberry__cupcake"
+              class="amount__clm2 amount"
+              value="0"
+            />
+            <input
+              type="number"
+              min="0"
+              max="10"
+              id="amount__checkbox7"
+              name="amount__apple__tart"
+              class="amount__clm2 amount"
+              value="0"
+            />
+            <input
+              type="number"
+              min="0"
+              max="10"
+              id="amount__checkbox8"
+              name="amount__cheesecake"
+              class="amount__clm2 amount"
+              value="0"
+            />
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="set__order">
+          <p>Итого: <span class="result">0</span> руб.</p>
+          <button type="button" class="btn">Оформить заказ</button>
+        </div>
+      </footer>
+    </div>
+    <script src="order-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  height: 110px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo {
+  position: abolute;
+}
+
+.header__title {
+  transform: translateX(50%);
+  margin-left: 204px;
+}
+
+.menu__logo {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  margin: 29px auto 29px 80px;
+}
+
+main {
+  background: #817070;
+  background-image: url(../img/cup-of-coffee.jpg),
+    url(../img/cup-of-coffee2.jpg), url(../img/cheesecake.jpg),
+    url(../img/apple-tart.jpg);
+  background-repeat: no-repeat;
+  background-size: 390px;
+  background-position: top 40px left 40px, bottom 0 right 40px,
+    bottom 0 left 40px, top 40px right 40px;
+  height: 645px;
+}
+
+.input__client__name {
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+  margin-bottom: 54px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.client__name {
+  background: #817070;
+  border: 3px solid #ffffff;
+  margin-right: 64px;
+  width: 300px;
+  height: 55px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  outline: none;
+}
+.client__surname {
+  background: #817070;
+  border: 3px solid #ffffff;
+  width: 300px;
+  height: 55px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+}
+
+.div__label__espresso {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.div__label__latte {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-right: 52px;
+}
+
+.div__label__cappuccino {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.div__label__americano {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.div__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+.div__column1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+  justify-content: flex-end;
+  height: 350px;
+  padding-top: 5px;
+}
+
+.div__label__clm1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 295px;
+  height: 415px;
+}
+
+.div__choice__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.div__choice__size {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 200px;
+}
+
+.div__column2 {
+  display: flex;
+  flex-direction: row;
+  height: 435px;
+}
+
+.div__choice__clm2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.div__label__clm2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.div__amount__clm1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 23px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  height: 375px;
+}
+
+.div__amount__clm2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-left: 23px;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox + label {
+  position: relative;
+  padding: 0 0 0 40px;
+  cursor: pointer;
+}
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background: #ebe2e2;
+}
+
+.checkbox + label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: #ebe2e2;
+}
+.checkbox:checked + label:after {
+  background: #6a4646;
+}
+
+.label__size {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio + label {
+  position: relative;
+  padding: 0 0 0 40px;
+  cursor: pointer;
+}
+
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 6px;
+  background: #ebe2e2;
+}
+
+.radio + label:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 9px;
+  height: 9px;
+  border-radius: 6px;
+  background: #ebe2e2;
+}
+.radio:checked + label:after {
+  background: #6a4646;
+}
+
+.amount__clm1 {
+  width: 45px;
+  height: 45px;
+  background: #817070;
+  border: 3px solid #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: end;
+}
+
+.amount__clm2 {
+  width: 45px;
+  height: 45px;
+  background: #817070;
+  border: 3px solid #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: end;
+}
+
+::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer {
+  background: #817070;
+}
+
+.set__order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.set__order p {
+  margin-top: 30px;
+  margin-bottom: 26px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  background: #ffffff;
+  color: #817070;
+  border: 3px solid #ffffff;
+  width: 220px;
+  height: 55px;
+  margin-bottom: 35px;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #817070;
+  cursor: pointer;
+}
